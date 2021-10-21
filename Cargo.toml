@@ -1,0 +1,21 @@
+[package]
+name = "ra-callgraph"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cfg = { path="../rust-analyzer/crates/cfg" }
+ide = { path="../rust-analyzer/crates/ide" }
+ide_db = { path="../rust-analyzer/crates/ide_db" }
+hir = { path="../rust-analyzer/crates/hir" }
+proc_macro_api = { path="../rust-analyzer/crates/proc_macro_api" }
+project_model = { path="../rust-analyzer/crates/project_model" }
+rust-analyzer = { path="../rust-analyzer/crates/rust-analyzer" }
+vfs = { path="../rust-analyzer/crates/vfs" }
+vfs-notify = { path="../rust-analyzer/crates/vfs-notify" }
+clap = "3.0.0-beta.5"
+anyhow = "1.0"
+dot = "0.1.4"
+crossbeam-channel = "0.5.1"
